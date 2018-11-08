@@ -1,0 +1,18 @@
+#letterinput{
+  position: relative;
+}
+
+#test{
+  position: absolute;
+  background-color: #f00;
+  top: 50%;
+  margin-left: 0.4rem;
+
+}
+
+
+input{
+  width: 1rem;
+  height: 0.28rem;
+
+}

@@ -1,0 +1,421 @@
+{
+	"data": [ {
+			"phrase": "[龇牙]",
+			"value": "f001"
+}, {
+			"phrase": "[调皮]",
+			"value": "f002"
+}, {
+			"phrase": "[流汗]",
+			"value": "f003"
+}, {
+			"phrase": "[偷笑]",
+			"value": "f004"
+}, {
+			"phrase": "[再见]",
+			"value": "f005"
+}, {
+			"phrase": "[敲打]",
+			"value": "f006"
+}, {
+			"phrase": "[擦汗]",
+			"value": "f007"
+}, {
+			"phrase": "[猪头]",
+			"value": "f009"
+}, {
+			"phrase": "[流泪]",
+			"value": "f010"
+}, {
+			"phrase": "[大哭]",
+			"value": "f011"
+}, {
+			"phrase": "[嘘]",
+			"value": "f012"
+}, {
+			"phrase": "[酷]",
+			"value": "f013"
+}, {
+			"phrase": "[抓狂]",
+			"value": "f014"
+}, {
+			"phrase": "[委屈]",
+			"value": "f015"
+}, {
+			"phrase": "[便便]",
+			"value": "f016"
+}, {
+			"phrase": "[炸弹]",
+			"value": "f017"
+}, {
+			"phrase": "[菜刀]",
+			"value": "f018"
+}, {
+			"phrase": "[可爱]",
+			"value": "f019"
+}, {
+			"phrase": "[色]",
+			"value": "f020"
+}, {
+			"phrase": "[害羞]",
+			"value": "f021"
+}, {
+			"phrase": "[得意]",
+			"value": "f022"
+}, {
+			"phrase": "[吐]",
+			"value": "f023"
+}, {
+			"phrase": "[微笑]",
+			"value": "f024"
+}, {
+			"phrase": "[怒]",
+			"value": "f025"
+}, {
+			"phrase": "[尴尬]",
+			"value": "f026"
+}, {
+			"phrase": "[惊恐]",
+			"value": "f027"
+}, {
+			"phrase": "[冷汗]",
+			"value": "f028"
+}, {
+			"phrase": "[爱心]",
+			"value": "f029"
+}, {
+			"phrase": "[示爱]",
+			"value": "f030"
+}, {
+			"phrase": "[白眼]",
+			"value": "f031"
+}, {
+			"phrase": "[傲慢]",
+			"value": "f032"
+}, {
+			"phrase": "[难过]",
+			"value": "f033"
+}, {
+			"phrase": "[惊讶]",
+			"value": "f034"
+}, {
+			"phrase": "[疑问]",
+			"value": "f035"
+}, {
+			"phrase": "[困]",
+			"value": "f036"
+}, {
+			"phrase": "[么么哒]",
+			"value": "f037"
+}, {
+			"phrase": "[憨笑]",
+			"value": "f038"
+}, {
+			"phrase": "[爱情]",
+			"value": "f039"
+}, {
+			"phrase": "[衰]",
+			"value": "f040"
+}, {
+			"phrase": "[撇嘴]",
+			"value": "f041"
+}, {
+			"phrase": "[阴险]",
+			"value": "f042"
+}, {
+			"phrase": "[奋斗]",
+			"value": "f043"
+}, {
+			"phrase": "[发呆]",
+			"value": "f044"
+}, {
+			"phrase": "[右哼哼]",
+			"value": "f045"
+}, {
+			"phrase": "[抱抱]",
+			"value": "f046"
+}, {
+			"phrase": "[坏笑]",
+			"value": "f047"
+}, {
+			"phrase": "[飞吻]",
+			"value": "f048"
+}, {
+			"phrase": "[鄙视]",
+			"value": "f049"
+}, {
+			"phrase": "[晕]",
+			"value": "f050"
+}, {
+			"phrase": "[大兵]",
+			"value": "f051"
+}, {
+			"phrase": "[可怜]",
+			"value": "f052"
+}, {
+			"phrase": "[强]",
+			"value": "f053"
+}, {
+			"phrase": "[弱]",
+			"value": "f054"
+}, {
+			"phrase": "[握手]",
+			"value": "f055"
+}, {
+			"phrase": "[胜利]",
+			"value": "f056"
+}, {
+			"phrase": "[抱拳]",
+			"value": "f057"
+}, {
+			"phrase": "[凋谢]",
+			"value": "f058"
+}, {
+			"phrase": "[米饭]",
+			"value": "f059"
+}, {
+			"phrase": "[蛋糕]",
+			"value": "f060"
+}, {
+			"phrase": "[西瓜]",
+			"value": "f061"
+}, {
+			"phrase": "[啤酒]",
+			"value": "f062"
+}, {
+			"phrase": "[瓢虫]",
+			"value": "f063"
+}, {
+			"phrase": "[勾引]",
+			"value": "f064"
+}, {
+			"phrase": "[OK]",
+			"value": "f065"
+}, {
+			"phrase": "[爱你]",
+			"value": "f066"
+}, {
+			"phrase": "[咖啡]",
+			"value": "f067"
+}, {
+			"phrase": "[月亮]",
+			"value": "f068"
+}, {
+			"phrase": "[刀]",
+			"value": "f069"
+}, {
+			"phrase": "[发抖]",
+			"value": "f070"
+}, {
+			"phrase": "[差劲]",
+			"value": "f071"
+}, {
+			"phrase": "[拳头]",
+			"value": "f072"
+}, {
+			"phrase": "[心碎了]",
+			"value": "f073"
+}, {
+			"phrase": "[太阳]",
+			"value": "f074"
+}, {
+			"phrase": "[礼物]",
+			"value": "f075"
+}, {
+			"phrase": "[皮球]",
+			"value": "f076"
+}, {
+			"phrase": "[骷髅]",
+			"value": "f077"
+}, {
+			"phrase": "[挥手]",
+			"value": "f078"
+}, {
+			"phrase": "[闪电]",
+			"value": "f079"
+}, {
+			"phrase": "[饥饿]",
+			"value": "f080"
+}, {
+			"phrase": "[睡觉]",
+			"value": "f081"
+}, {
+			"phrase": "[咒骂]",
+			"value": "f082"
+}, {
+			"phrase": "[折磨]",
+			"value": "f083"
+}, {
+			"phrase": "[抠鼻]",
+			"value": "f084"
+}, {
+			"phrase": "[鼓掌]",
+			"value": "f085"
+}, {
+			"phrase": "[糗大了]",
+			"value": "f086"
+}, {
+			"phrase": "[左哼哼]",
+			"value": "f087"
+}, {
+			"phrase": "[打哈欠]",
+			"value": "f088"
+}, {
+			"phrase": "[快哭了]",
+			"value": "f089"
+}, {
+			"phrase": "[吓]",
+			"value": "f090"
+}, {
+			"phrase": "[篮球]",
+			"value": "f091"
+}, {
+			"phrase": "[乒乓]",
+			"value": "f092"
+}, {
+			"phrase": "[NO]",
+			"value": "f093"
+}, {
+			"phrase": "[跳跳]",
+			"value": "f094"
+}, {
+			"phrase": "[怄火]",
+			"value": "f095"
+}, {
+			"phrase": "[转圈]",
+			"value": "f096"
+}, {
+			"phrase": "[磕头]",
+			"value": "f097"
+}, {
+			"phrase": "[回头]",
+			"value": "f098"
+}, {
+			"phrase": "[跳绳]",
+			"value": "f099"
+}, {
+			"phrase": "[激动]",
+			"value": "f100"
+}, {
+			"phrase": "[街舞]",
+			"value": "f101"
+}, {
+			"phrase": "[献吻]",
+			"value": "f102"
+}, {
+			"phrase": "[左太极]",
+			"value": "f103"
+}, {
+			"phrase": "[右太极]",
+			"value": "f104"
+}, {
+			"phrase": "[闭嘴]",
+			"value": "f105"
+}, {
+			"phrase": "[猫咪]",
+			"value": "f106"
+}, {
+			"phrase": "[红双喜]",
+			"value": "f107"
+}, {
+			"phrase": "[鞭炮]",
+			"value": "f108"
+}, {
+			"phrase": "[红灯笼]",
+			"value": "f109"
+}, {
+			"phrase": "[麻将]",
+			"value": "f110"
+}, {
+			"phrase": "[麦克风]",
+			"value": "f111"
+}, {
+			"phrase": "[礼品袋]",
+			"value": "f112"
+}, {
+			"phrase": "[信封]",
+			"value": "f113"
+}, {
+			"phrase": "[象棋]",
+			"value": "f114"
+}, {
+			"phrase": "[彩带]",
+			"value": "f115"
+}, {
+			"phrase": "[蜡烛]",
+			"value": "f116"
+}, {
+			"phrase": "[爆筋]",
+			"value": "f117"
+}, {
+			"phrase": "[棒棒糖]",
+			"value": "f118"
+}, {
+			"phrase": "[奶瓶]",
+			"value": "f119"
+}, {
+			"phrase": "[面条]",
+			"value": "f120"
+}, {
+			"phrase": "[香蕉]",
+			"value": "f121"
+}, {
+			"phrase": "[飞机]",
+			"value": "f122"
+}, {
+			"phrase": "[汽车]",
+			"value": "f123"
+}, {
+			"phrase": "[左车头]",
+			"value": "f124"
+}, {
+			"phrase": "[右车头]",
+			"value": "f126"
+}, {
+			"phrase": "[多云]",
+			"value": "f127"
+}, {
+			"phrase": "[下雨]",
+			"value": "f128"
+}, {
+			"phrase": "[钞票]",
+			"value": "f129"
+}, {
+			"phrase": "[熊猫]",
+			"value": "f130"
+}, {
+			"phrase": "[灯泡]",
+			"value": "f131"
+}, {
+			"phrase": "[风车]",
+			"value": "f132"
+}, {
+			"phrase": "[闹钟]",
+			"value": "f133"
+}, {
+			"phrase": "[雨伞]",
+			"value": "f134"
+}, {
+			"phrase": "[彩球]",
+			"value": "f135"
+}, {
+			"phrase": "[钻戒]",
+			"value": "f136"
+}, {
+			"phrase": "[沙发]",
+			"value": "f137"
+}, {
+			"phrase": "[纸巾]",
+			"value": "f138"
+}, {
+			"phrase": "[药]",
+			"value": "f139"
+}, {
+			"phrase": "[手枪]",
+			"value": "f140"
+}, {
+			"phrase": "[青蛙]",
+			"value": "f141"
+}
+            ]
+}

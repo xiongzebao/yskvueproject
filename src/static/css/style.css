@@ -1,0 +1,540 @@
+
+@font-face {font-family: "iconfont";
+  src:url('./../font/iconfont.ttf') format('truetype'); /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-guanli:before { content: "\e601"; }
+
+.icon-guanbi:before { content: "\e60e"; }
+
+.icon-add:before { content: "\e607"; }
+
+.icon-jilu:before { content: "\e604"; }
+
+.icon-iconfontcolor74:before { content: "\e6b3"; }
+
+.icon-shouji:before { content: "\e62a"; }
+
+.icon-msnui-user-auth:before { content: "\e724"; }
+
+.icon-rili:before { content: "\e65f"; }
+
+.icon-cet:before { content: "\e657"; }
+
+.icon-yonghu:before { content: "\e620"; }
+
+.icon-iconfontqian:before { content: "\e609"; }
+
+.icon-arrowup:before { content: "\e614"; }
+
+.icon-xuanze:before { content: "\e608"; }
+
+.icon-heduixinxi:before { content: "\e605"; }
+
+.icon-1218biaoqianhongqi:before { content: "\ec71"; }
+
+.icon-safe:before { content: "\e6a9"; }
+
+.icon-gou:before { content: "\e640"; }
+
+.icon-bao-copy:before { content: "\e61d"; }
+
+.icon-mouse1179267easyiconnet:before { content: "\e60a"; }
+
+.icon-shezhi:before { content: "\e6c2"; }
+
+.icon-juzhongkuai:before { content: "\e6b4"; }
+
+.icon-dian-copy:before { content: "\e603"; }
+
+.icon-riqi:before { content: "\e68c"; }
+
+.icon-diannao:before { content: "\e696"; }
+
+.icon-chengjishezhi:before { content: "\e611"; }
+
+.icon-icadd:before { content: "\e616"; }
+
+.icon-weitongguo:before { content: "\e630"; }
+
+.icon-xiayiye:before { content: "\e749"; }
+
+.icon-xian:before { content: "\e61e"; }
+
+.icon-yuanxiaoku:before { content: "\e68d"; }
+
+.icon-shenhezhong:before { content: "\e60b"; }
+
+.icon-daitijiao:before { content: "\e60c"; }
+
+.icon-tianxie:before { content: "\e65c"; }
+
+.icon-mihao:before { content: "\ea07"; }
+
+.icon-xuanze1:before { content: "\e617"; }
+
+.icon-bi:before { content: "\e600"; }
+
+.icon-xiangxiajiantou:before { content: "\e652"; }
+
+.icon-yousanjiao:before { content: "\e61a"; }
+
+.icon-chenggong:before { content: "\e633"; }
+
+.icon-jiaofei:before { content: "\e612"; }
+
+.icon-help:before { content: "\e602"; }
+
+.icon-blue-dot:before { content: "\e606"; }
+
+.icon-love:before { content: "\e613"; }
+
+.icon-sousuo:before { content: "\e651"; }
+
+.icon-jianqu:before { content: "\e610"; }
+img {
+    display: block;
+    float: left;
+    border: none;
+}
+/*无图时去掉边框*/
+img[src=""],img:not([src]){
+    opacity:0;
+}
+
+body,
+html {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: #000;
+    position: relative;
+    background: #f4f4f4;
+    width:100%;
+    height: 100%;
+}
+html{
+    width: 100%;
+    height: 100%;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+body{
+    -webkit-overflow-scrolling:touch;
+}
+/*禁止选中*/
+/*
+body{
+    -webkit-touch-callout:none;
+    -moz-touch-callout:none;
+    -ms-touch-callout:none;
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    touch-callout:none;
+}
+*/
+/*
+input,textarea {
+    -webkit-user-select:auto;
+    user-select:auto;
+    -webkit-appearance: none;
+}
+*/
+*:not(input,textarea) { 
+  -webkit-touch-callout: none; 
+  -webkit-user-select: none;
+  user-select:none;
+}
+.picker-toolbar {
+    border-bottom: 1px solid #eaeaea;
+}
+
+a {
+    text-decoration: none;
+    color: #474747;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);/*点击*/
+}
+
+img,
+input {
+    display: block;
+    border: 0;
+    -webkit-appearance:none;
+}
+
+li {
+    list-style: none;
+}
+
+#app {
+    width: 100%;
+    /*height: 100%;*/
+}
+
+.clear:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+#bkxq .scholl .mint-header-button.is-left {
+    text-align: left;
+    display: none;
+}
+
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+form,
+fieldset,
+legend,
+button,
+input,
+textarea,
+th,
+td,
+menu {
+    margin: 0;
+    padding: 0;
+}
+
+textarea,
+input,
+button,
+select,
+keygen,
+legend {
+    font-family: "Microsoft YaHei", tahoma, arial, \5b8b\4f53;
+    color: #303645;
+    outline: 0;
+}
+textarea{-webkit-appearance:none;}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+small {
+    font-size: 100%;
+}
+
+code,
+kbd,
+pre,
+samp,
+tt {
+    font-family: "courier new", monospace, serif;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+    font-style: normal;
+    font-weight: normal;
+}
+
+address,
+cite,
+dfn,
+em,
+var {
+    font-style: normal;
+}
+
+header,
+footer,
+section,
+article,
+aside,
+nav,
+hgroup,
+address,
+figure,
+figcaption,
+menu,
+details {
+    display: block;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+caption,
+th {
+    text-align: left;
+}
+
+legend {
+    color: #000;
+}
+
+fieldset,
+img,
+iframe,
+abbr,
+acronym {
+    border: 0;
+    border: none;
+}
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%;
+}
+
+textarea {
+    overflow: auto;
+    resize: none;
+}
+
+input[type="text"],
+input[type="password"] {
+    text-indent: 5px;
+    *text-indent: 0 !important;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+q::before,
+q::after {
+    content: '';
+}
+
+del,
+ins,
+u,
+s,
+a,
+a:hover {
+    text-decoration: none;
+}
+
+a,
+button {
+    cursor: pointer;
+}
+
+sub,
+sup {
+    position: relative;
+    font-size: 75%;
+    line-height: 0;
+    vertical-align: baseline
+}
+
+sup {
+    top: -0.5em
+}
+
+sub {
+    bottom: -0.25em
+}
+
+
+/*mint-ui* 头部resetcss*/
+
+.mint-header {
+    height: 0.8rem!important;
+    font-size: 0.35rem;
+    line-height: 0.8rem;
+    background: #42cefc!important;
+}
+.mint-header.is-fixed {
+    z-index: 999;
+}
+.mint-header .mintui-back {
+    font-size: 0.35rem;
+    line-height: 0.8rem;
+}
+
+.mint-header .mint-button,
+.mint-header .mint-header-title,
+.mint-header .mint-button-icon {
+    height: 0.8rem;
+    font-size: 0.35rem;
+    line-height: 0.8rem;
+}
+/*toast堆叠属性最大*/
+.mint-toast{
+    z-index:99999!important;
+}
+
+/*定义公共padding-top*/
+.publicMintHeader {
+    padding-top: 0.8rem;
+}
+
+
+.sub-ul .scanpic>div{width:100%!important;height:100%!important;}
+.sub-ul .scanpic canvas {
+    width: 100%!important;
+    height: 100%!important;
+}
+
+.ymjh .medal-wall .medal-share .share-pic .dl #qrcode_canvas canvas {
+    width: 100%!important;
+    height: 100%!important;
+}
+/*文化分测算picker*/
+#cultrueTest .mint-popup-bottom{
+    height: 50%;
+    overflow: hidden;
+}
+.picker-slot{overflow: visible;}
+.picker{overflow: visible;}
+
+/*mint-ui的indicator堆叠数*/
+.mint-indicator .mint-indicator-wrapper{
+    z-index:9999!important;
+}
+.mint-indicator .mint-indicator-mask{
+    z-index:9998!important;
+    opacity:0.5!important;
+    background-color: #000!important;
+}
+/*.query-R .my-scroller .pull-to-refresh-layer{
+    margin-top:-0.81rem!important;
+}*/
+.choice-lists .mint-cell-wrapper .mint-cell-title .mint-radiolist-label{display:flex!important;align-items: center;}
+.choice-lists .mint-cell-wrapper .mint-cell-title .mint-checklist-label{display:flex!important;align-items: center;}
+
+.choice-lists .mint-cell-title .mint-radiolist-label{display:flex!important;}
+/*.query-R ._v-container>._v-content>.pull-to-refresh-layer{height:.8rem!important;overflow: hidden;}*/
+/* .lorem-inner{animation:myownLoading 500ms infinite linear; }
+@keyframes myownLoading{
+    from {transform:rotate(0);}
+    to {transform: rotate(360deg);}
+} */
+.radio-list .mint-cell-wrapper{padding:0 .05rem;}
+/*.radio-list .mint-radio-core{width:.3rem;height:.3rem;}*/
+/*.radio-list .mint-radio-core:after{width:.16rem;height:.16rem;top:50%;left:50%;margin:-.08rem 0 0 -.08rem;}*/
+.info-body .mint-cell .mint-cell-wrapper{background-image: none;}
+.info-body .mint-cell:last-child{background-image: none}
+.select-body .back-prof-list li .button-box button>.mint-button-text{box-shadow: none;font-size:.2rem!important;}
+.resetHaB{height:auto!important;overflow: auto!important;}
+/*.resetHaB *{overflow: scroll!important;}*/
+
+/*帮助与反馈*/
+.all-ques .top-5 img{max-width:100%!important;height:auto!important;display:block;}
+.hot-question-del-p .hot-question-ext img{max-width:100%!important;height:auto!important;}
+.search-del .mint-search-list{top:96px!important;}
+/*动画*/
+
+.v-spinner {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.v-spinner .v-dot {}
+
+.v-spinner .v-dot1 {
+    -webkit-animation: v-dotRotate 2s 0s infinite linear;
+    animation: v-dotRotate 2s 0s infinite linear;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.v-spinner .v-dot2 {
+    -webkit-animation: v-dotBounce 2s 0s infinite linear;
+    animation: v-dotBounce 2s 0s infinite linear;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    position: absolute;
+    top: 0;
+    bottom: auto;
+}
+
+.v-spinner .v-dot3 {
+    -webkit-animation: v-dotBounce 2s -1s infinite linear;
+    animation: v-dotBounce 2s -1s infinite linear;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    position: absolute;
+    top: auto;
+    bottom: 0;
+}
+
+@-webkit-keyframes v-dotRotate {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes v-dotRotate {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes v-dotBounce {
+    0%,
+    100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    50% {
+        -webkit-transform: scale(1.0);
+        transform: scale(1.0);
+    }
+}
+
+@keyframes v-dotBounce {
+    0%,
+    100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    50% {
+        -webkit-transform: scale(1.0);
+        transform: scale(1.0);
+    }
+}
+.list-wrap .mint-indexlist-content{height:100%;}
+/*信息补填*/
+.radio-list .mint-cell{display:inline-block;min-height: .4rem;width:50%;}
+.check-list .mint-cell{width:33.33%;}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="x-rim-auto-match" content="none">
+    <title>艺考升</title>
+  <link rel="stylesheet" href="static/css/style.css">
+  <!-- <script>
+    /*代码监控*/
+    window.onerror = function(msg,url,line,col,error){
+      alert("代码有错误错误信息为"+msg+"--------"+url+"-------"+line+"--------"+col+"-----"+error);
+      return true;
+    };  
+  </script> -->
+
+
+
+	 <!-- <script src="static/js/pack.js"></script>
+	<script src="static/js/vendor.dll.js"></script>  -->
+
+<!--  <script src="static/js/debuggap.js"></script>-->
+  </head>
+  <body>
+    <div id="app"> 
+    </div>
+  </body>
+
+
+  <script src='./static/js/lazyload-1.0.4.js'></script>
+  <script>
+  function loadComplete() {
+    //$("#loadAnimate").remove();
+  }
+  // function loadingAnima(){
+   //  var app = document.getElementById("app");
+   //  var div= document.createElement("div");
+   //  var html=
+    // "<div id='loadAnimate'>"+
+  //        "<div class='v-spinner'>"+
+  //            "<div class='v-dot v-dot1' style='height: 60px;width: 60px; position: relative'>"+
+  //                "<div class='v-dot v-dot2' style='background-color: rgb(93, 197, 150); height: 30px; width: 30px;border-radius: 100%'>"+
+  //                "</div>"+
+  //                "<div class='v-dot v-dot3' style='background-color: rgb(93, 197, 150); height: 30px; width:30px;border-radius: 100%'>"+
+  //                "</div>"+
+  //            "</div>"+
+  //          "</div>"+
+  //      "</div>";
+    //   div.innerHTML = html;  
+    //   app.appendChild(div); 
+  // }
+   function loadscript(){
+     LazyLoad.js([
+	   './static/js/pack.js', 
+	   './static/js/vendor.dll.js',
+	   './static/js/app.js',
+       './static/js/app.js',
+       './static/js/app.js'
+    ], loadComplete);
+   }
+      loadscript(); 
+      // loadingAnima();
+  
+     
+  </script> 
+
+</html>

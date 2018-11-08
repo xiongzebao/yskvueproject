@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>艺考升录取查询</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<script src="js/flexible.js"></script>
+		<script src="https://s22.cnzz.com/z_stat.php?id=1262831067&web_id=1262831067" language="JavaScript"></script>
+		<style>
+			html {
+				height: 100%;
+				background: #fff;	
+			}
+			body {
+				 font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+			}
+			body a{
+				display: none;
+			}
+			/*样式重置*/
+			
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			img{
+				display: block;
+				border: 0;
+				border:none;
+			}
+			.global {
+				overflow: hidden;
+			}
+			
+			input {
+				outline: none;
+				outline: 0;
+			}
+			
+			li {
+				list-style: none;
+			}
+			
+			.share-header {
+				width: 100%;
+				height: 1.2rem;
+				line-height: 1.2rem;
+				overflow: hidden;
+				font-size: 0.5rem;
+				background: #33c5fc;
+				color: #fff;
+				visibility: hidden;
+			}
+			
+			.share-header div {
+				float: left;
+				text-align: center;
+				font-size: 0.5rem;
+			}
+			
+			.share-header-back,
+			.share-header-share {
+				width: 20%;
+			}
+			.share-header-title {
+				width: 60%;
+			}
+			.share-header-background{
+				width:100%;
+				height: 8.5rem;
+				background: url(img/default.png) no-repeat;
+				background-size: 100% 100%;
+				
+				
+			}
+			/*结果展示*/
+			
+			.share-main {
+				overflow: hidden;
+			}
+			
+			.share-main-banner {
+				position: relative;
+				font-size: 0.5rem;
+				color: #fff;
+				text-align: center;
+				margin: 0.55rem auto;
+			}
+			
+			#banner-user-name {
+				font-size: 0.5rem;
+			}
+			
+			#banner-user-school{
+				font-size: 0.7rem;
+			}
+			#banner-user-infofail{
+				padding:0.5rem 0;
+			}
+			.share-main-result {
+				position: absolute;
+				bottom: 10px;
+				left: 0;
+				width: 100%;
+			}
+			
+			.share-main-result p {
+				text-align: center;
+			}
+			/*查询开始*/
+			
+			.share-main-search {
+				overflow: hidden;
+				font-size: 0.5rem;
+				margin: 0.4rem auto;
+			}
+			
+			.share-main-search input {
+				margin-left:5%;
+				width:60%;
+				height: 0.96rem;
+				line-height: 0.96rem;
+				font-size: 0.5rem;
+				text-indent: 8px;
+				color: #d9d9d9;
+				background: #fff;
+				-webkit-appearance: none;
+				-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+				-webkit-border-radius: 5px;
+				border-radius: 5px;
+				border: 1px solid #818181;
+				box-sizing: border-box;
+				-webkit-box-sizing: border-box;
+				float:left;
+			}
+			
+			.main-search-go {
+				width: 20%;
+				text-align: center;
+				height: 0.96rem;
+				line-height: 0.96rem;
+				background: #33c5fc;
+				color: #fff;
+				margin-bottom:0.26rem;
+				cursor: pointer;
+				-webkit-border-radius: 5px;
+				border-radius: 5px;
+				float:right;
+				margin-right: 5%;
+			}
+			/*学校列表*/
+			.main-search-schoolscan{
+				overflow: hidden;
+				font-size:0.5rem;
+					
+			}
+			.share-footer-scan{
+				float: right;
+				margin-right: 5%;
+				margin-top: 1rem;
+			}
+			.main-search-school {
+				font-size: 0.44rem;
+				overflow: hidden;
+				float: left;
+				margin-left:5%;
+				width: 50%;
+				
+				
+			}
+			
+			.main-search-school h3{
+				font-size: 0.44rem;
+				height: 0.5rem;
+				line-height: 0.5rem;
+			}
+			.main-search-school ul{
+				height: 4rem;
+				overflow-y: auto;
+			}
+			.main-search-school li{
+				height: 0.5rem;
+				line-height: 0.5rem;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space:nowrap;
+			}	
+			.share-footer-scan img {
+				width: 3rem;
+				height:3rem;
+			}
+			
+			.share-footer-scan p {
+				margin: 0 auto;
+				margin-top: 0.22rem;
+				text-align: center;
+				color: #000;
+			}
+			.share-footer-note{
+				text-align: center;
+				padding:10px 0;
+				font-size:0.3rem;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class='global'>
+			<div class="share-header-background">
+				<div class="share-header">
+					<div class='share-header-back'>关闭</div>
+					<div class='share-header-title'>录取查询</div>
+					<div class='share-header-share'>分享</div>
+				</div>
+				<!--结果展示-->
+				<div class="share-main">
+					<div class="share-main-banner">
+						<p id='banner-user-name'></p>
+						<p id='banner-user-school'></p>
+						<p id='banner-user-info'></p>
+						<p id='banner-user-infofail'></p>
+					</div>
+	
+				</div>
+			</div>
+			<div class="share-main-search">
+					<input type="tel" placeholder='输入身份证号码' class="main-search-value">
+					<div class="main-search-go">查询</div>
+					
+			</div>
+			<div class="main-search-schoolscan">
+					<div class="main-search-school">
+						<h3>可查询院校</h3>
+						<ul id='footer-school-list'></ul>
+				</div>
+				<div class='share-footer-scan'>
+					<!--<div id="qrcode"></div>-->
+					<img src="img/scan.png" alt="二维码">
+					<p>长按查询</p>
+				</div>
+			</div>
+		 <p class="share-footer-note">说明 : 正式录取结果以学校寄发的录取通知书为准</p>
+		</div>
+	</body>
+	<script src="js/zepto.min.js"></script>
+	<script src="js/ajaxMethod.js"></script>
+	<script>
+		var userAgent = navigator.userAgent;
+		var isYKS = userAgent.indexOf('yks_andr') > -1 || userAgent.indexOf('yks_ios') > -1; 
+		//var isiOS = !!(userAgent.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/));
+		//if(isAndroid||isiOS) {
+		if(isYKS) {
+			$('.share-header').css({
+				"visibility": "visible"
+			})
+		} else {
+			$('.share-header').css({
+				"visibility": "hidden"
+			})
+		}	
+		$('.share-header').on('click', '.share-header-share', function() {
+			var search = window.location.href;
+			yksapp.goShareWithDescAndIconAndUrl('艺考升', '艺考升录取查询', '', search);
+		})
+		/*关闭*/
+		$('.share-header').on('click', '.share-header-back', function() {
+			yksapp.closeWebPage();
+		});
+
+		function GetQueryString(name) {
+			var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+			var urlSearch = window.location.search;
+			var strat = urlSearch.indexOf('urlSearchData=') + 14;
+			var end = urlSearch.indexOf('urlSearchData', strat)
+			var urlReal = urlSearch.substring(strat, end);
+			var urlEncode = decodeURIComponent(window.atob(String(urlReal)));
+			var r = urlEncode.match(reg);
+			if(r != null) return r[2];
+			return null;
+		}
+		/*点击查询*/
+		$('.share-main-search').on('click', '.main-search-go', function() {
+				var idCard=$('.main-search-value').val();
+				if(!idCard){
+					alert('请输入身份证号码');
+					return ;
+				}
+			var data = {
+				"idCardNo": idCard
+			}
+			ajaxMethod.doAjax("aftexam,/api/m/matriculat/query.htm", data, function(data) {
+				console.log(data);
+				if(data.success) {
+					if(data.datas.matriculatDO) {
+						var database = data.datas.matriculatDO;
+						$('#banner-user-name').text(database.stuName);
+						$('#banner-user-school').text(database.schoolName);
+						var userInfo =database.profName+database.matricFlagName;
+						$('#banner-user-info').text(userInfo);
+						$('.share-header-background').css({
+							background: "url(img/success.png) no-repeat",
+							backgroundSize: "100% 100%"
+						});
+						var urlsearch = "stuName=" + database.stuName + "&schoolName=" + database.schoolName + "&profName=" + database.profName + "&matricFlagName=" + database.matricFlagName;
+
+						window.location.search = "urlSearchData=" + window.btoa(encodeURIComponent(String(urlsearch))) + "urlSearchData";
+					} else {
+						$('#banner-user-name').text('');
+						$('#banner-user-school').text('');
+						$('#banner-user-info').text('');
+						$('#banner-user-infofail').text("暂未查到录取信息");
+						var urlsearch = "stuName=1&schoolName=1&profName=1&matricFlagName=1";
+						window.location.search = "urlSearchData=" + window.btoa(encodeURIComponent(String(urlsearch))) + "urlSearchData";
+						$('.share-header-background').css({
+							background: "url(img/fail.png) no-repeat",
+							backgroundSize: "100% 100%"
+						})
+
+					}
+				} else {
+					alert(data.message)
+				}
+			})
+
+		})
+		/*获取学校*/
+		ajaxMethod.doAjax("aftexam,/api/m/matriculat/schoolName.htm", {}, function(data) {
+			if(data.success) {
+				var database = data.datas.matricList;
+				var listHtml = '';
+				for(var i = 0, len = database.length; i < len; i++) {
+					if(database[i].kaoShiMC) {
+						listHtml += "<li>" + database[i].schoolName + "(" + database[i].kaoShiMC + ")</li>";
+					} else {
+						listHtml += "<li>" + database[i].schoolName + "</li>";
+					}
+
+				}
+				listHtml += '<li>更新中...</li>'
+				$('#footer-school-list').html(listHtml);
+			} else {
+				alert(data.message)
+			}
+		})
+		/*从地址栏获取数据*/
+		var myurl = GetQueryString("stuName");
+		if((myurl) == '1') {
+			$('#banner-user-infofail').text("暂未查到录取信息");
+			$('.share-header-background').css({
+				background: "url(img/fail.png) no-repeat",
+				backgroundSize: "100% 100%"
+			})
+
+		} else if(myurl != null && myurl.toString().length > 1) {
+			$('#banner-user-name').text(GetQueryString("stuName"));
+		    $('#banner-user-school').text(GetQueryString("schoolName"));
+		var userInfo =GetQueryString("profName")+GetQueryString("matricFlagName");
+			$('#banner-user-info').text(userInfo);
+			$('.share-header-background').css({
+				background: "url(img/success.png) no-repeat",
+				backgroundSize: "100% 100%"
+			})
+		} else {
+			$('#banner-user-name').text('')
+			$('#banner-user-info').text('');
+			$('.share-header-background').css({
+				background: "url(img/default.png) no-repeat",
+				backgroundSize: "100% 100%"
+			})
+		}
+	</script>
+
+</html>

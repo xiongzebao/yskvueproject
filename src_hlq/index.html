@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta charset="utf-8">
+    <meta name="keywords" content="微信二次分享"/>
+    <meta name="description" content="获取微信二次分享描述"/>
+    <title></title>
+    <link rel="stylesheet" href="./static/styles/mint-ui.min.css" />
+    <link rel="stylesheet" href="./static/styles/reset.css">
+    <link rel="stylesheet" href="./static/styles/iconfont.css">
+    <script>
+        if(window.location.href.indexOf('artstudent')>-1){
+            if(window.location.protocol=='http:'){
+                var url = window.location.href;
+                var suburl=url.substr(url.indexOf("http:")+5)
+                window.location.href = "https:"+suburl;
+            }  
+        }
+    </script>
+    <script src="./static/scripts/zepto.min.js"></script>
+    <script src="./static/scripts/ajaxMethod.js"></script>
+    <script src="./static/scripts/fontSize.js"></script>
+    <script src="./static/scripts/jweixin-1.2.0.js"></script>
+<!--     <script src="./static/scripts/debuggap.js"></script> -->
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
+<!-- 
+  <script src='./static/scripts/lazyload-1.0.4.js'></script>
+  <script src="static/scripts/debuggap.js"></script> 
+  <script>
+  function loadComplete() {
+    // alert('Hooray for LazyLoad!');
+  }
+   function loadscript(){
+     LazyLoad.js([
+    './static/scripts/fontSize.js',
+    './static/scripts/zepto.min.js',
+    './static/scripts/ajaxMethod.js',
+   
+     
+    ], loadComplete);
+   }
+  window.onload=function(){
+     setTimeout(loadscript,10); 
+     var html=document.getElementsByTagName("html")[0];
+     html.removeChild(node);
+  }
+  </script> -->
+
+</html>
